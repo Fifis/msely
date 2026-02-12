@@ -7,14 +7,16 @@ This repository contains the replication codes for Cosma, Kostyrka, Tripathi (20
 The files should be run in the following order.
 
 1. Pre-processor script to get the data from SAS into RData (`rep-AE98-preprocess-rev2.R`);
-2. Main script (`rep-AE98-smooth-rev2.R`).
+2. Main script (`rep-AE98-smooth-rev2.R`);
+3. Data files (`pums80-twoa.rds`, `pums90-onea.rds`).
 
 The simulation is resource-intensive and is best run in a super-computer cluster.
 
 # What is under the hood of `rep-AE98-preprocess-rev2.R`
 
 This file requires `m_d_806.sas7bdat` from the [Angrist Data Archive](https://economics.mit.edu/people/faculty/josh-angrist/angrist-data-archive) (specifically, the [AngEv98.zip](https://economics.mit.edu/sites/default/files/publications/AngEv98.zip) file with all the data).
-Put `m_d_806.sas7bdat` into the same folder as `rep-AE98-preprocess-rev2.R` and run the latter in R (no user input needed).
+Put `m_d_806.sas7bdat` into the same folder as `rep-AE98-preprocess-rev2.R` and run the latter in R (no user input needed) to get the outputs `pums80-twoa.rds` and `pums90-onea.rds`.
+The already-processed files `pums80-twoa.rds` and `pums90-onea.rds` are provided in this repository for research purposes.
 
 # What is under the hood of `rep-AE98-smooth-rev2.R`
 
