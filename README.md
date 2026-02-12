@@ -79,7 +79,7 @@ We save the output into many per-seed `.RData` result files.
 After loading simulation results, we produce:
 * Missingness-rate curves;
 * Estimator success-rate diagnostics;
-* Distribution summaries of estimates and CI behavior;
+* Distribution summaries of estimates and CI behaviour;
 * Publication-ready plots (PDF + TikZ/LaTeX).
 
 This section also generates Table 2 and Figures 1 and 2.
