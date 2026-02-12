@@ -4,11 +4,15 @@ This repository contains the replication codes for Cosma, Kostyrka, Tripathi (20
 
 # Contents
 
-The files should be run in the following order.
+The files should be processed in the following order.
 
-1. Pre-processor script to get the data from SAS into RData (`rep-AE98-preprocess-rev2.R`);
-2. Main script (`rep-AE98-smooth-rev2.R`);
-3. Data files (`pums80-twoa.rds`, `pums90-onea.rds`).
+1a. Download the data files (`pums80-twoa.rds`, `pums90-onea.rds`);
+
+1b. Alternatively, run the pre-processor script to get the aforementioned two as RData from SAS (`rep-AE98-preprocess-rev2.R`);
+
+2a. Run the main script (`rep-AE98-smooth-rev2.R`).
+
+2b. The tables should be printed in the console; the images should be generated in the working directory.
 
 The simulation is resource-intensive and is best run in a super-computer cluster.
 
