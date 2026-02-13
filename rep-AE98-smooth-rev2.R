@@ -18,7 +18,11 @@ library(pnd)
 
 library(tikzDevice)
 
-ncores <- if (Sys.info()["nodename"] == "T480") 3 else 16
+# CHANGE THE NUMBER OF CORES DEPENDING ON THE MACHINE
+ncores <- if (.Platform$OS.type == "unix") 4 else 1
+# Please use all available cores! Each of the final simulations uses all
+# non-parallel functions (SEL in chunks, gradients etc.), so the more cores,
+# the better; a decent super-computer cluster should have 100+ cores
 RcppParallel::setThreadOptions(numThreads = 1)
 data.table::setDTthreads(1)
 
